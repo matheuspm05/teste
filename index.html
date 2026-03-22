@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <div class="logo">Consultório <span>do Aço 🏍️🧑‍⚕️👩🪮🫗</span></div>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#precos">Preços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button
+        class="btn-nav"
+        onclick="
+          document
+            .getElementById('contato')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        Agendar Consulta
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+      <div class="bg-deco bg-deco-1"></div>
+      <div class="bg-deco bg-deco-2"></div>
+      <div class="hero-grid">
+        <div>
+          <div class="hero-badge fade-up fade-up-1">
+            ⚡ Especialistas em você
+          </div>
+          <h1 class="fade-up fade-up-2">
+            Sua saúde
+            <span class="destaque">em boas mãos</span>
+            de ferro.
+          </h1>
+          <p class="hero-desc fade-up fade-up-3">
+            No Consultório do Aço, unimos dedicação, tecnologia e cuidado humano
+            para oferecer um atendimento que vai além do esperado. Porque saúde
+            de qualidade é um direito, não um privilégio.
+          </p>
+          <div class="hero-cta fade-up fade-up-4">
+            <a href="#contato" class="btn-primary">Agendar consulta →</a>
+            <a href="#sobre" class="btn-secondary">Conheça mais</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-main fade-up fade-up-3">
+            <img
+              src="/pintura a oleo.png"
+              alt="Foto do médico"
+              class="foto-medico"
+            />
+            <h3>Consultório do Aço</h3>
+            <p>Atendimento presencial e online</p>
+            <div class="stat-row">
+              <div class="stat-box">
+                <span class="num">+500</span>
+                <small>Pacientes atendidos</small>
+              </div>
+              <div class="stat-box">
+                <span class="num">169%</span>
+                <small>Satisfação</small>
+              </div>
+            </div>
+            <div class="badge-disponivel">
+              <span class="dot-green"></span>
+              Horários disponíveis hoje
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE / FEATURES -->
+    <section id="sobre">
+      <div class="section-inner">
+        <p class="section-label">Por que nos escolher</p>
+        <h2 class="section-title">Diferenciais que<br />fazem a diferença</h2>
+        <p class="section-sub">
+          Cada detalhe do nosso atendimento foi pensado para que você se sinta
+          acolhido, seguro e bem cuidado do início ao fim.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon ic-red">🩺</div>
+            <h3>Atendimento Humanizado</h3>
+            <p>
+              Nossa equipe te ouve de verdade. Consultas sem pressa, com atenção
+              total ao seu histórico e bem-estar.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon ic-orange">⚡</div>
+            <h3>Resultados Rápidos</h3>
+            <p>
+              Laudos e exames com agilidade, para que seu tratamento não perca
+              tempo esperando papelada.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon ic-blue">💻</div>
+            <h3>Teleconsulta Online</h3>
+            <p>
+              Cuide da sua saúde de onde estiver. Consultas online seguras e
+              práticas pelo seu celular ou computador.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon ic-green">🔒</div>
+            <h3>Sigilo Garantido</h3>
+            <p>
+              Seus dados e histórico médico protegidos com total privacidade e
+              em conformidade com a LGPD.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- PREÇOS -->
+    <section id="precos">
+      <div class="section-inner">
+        <p class="section-label">Planos & Valores</p>
+        <h2 class="section-title">Transparência<br />em cada detalhe</h2>
+        <p class="section-sub">
+          Sem surpresas. Conheça nossos planos e escolha o que melhor se adapta
+          à sua necessidade.
+        </p>
+
+        <div class="precos-grid">
+          <!-- Básico -->
+          <div class="preco-card">
+            <p class="preco-nome">Consulta Avulsa</p>
+            <div class="preco-valor"><sup>R$</sup>150</div>
+            <p class="preco-periodo">por consulta</p>
+            <ul class="preco-lista">
+              <li>Consulta presencial ou online</li>
+              <li>Receituário digital</li>
+              <li>Orientação pós-consulta</li>
+              <li>Encaminhamentos inclusos</li>
+            </ul>
+            <a href="#contato" class="btn-preco btn-preco-outline"
+              >Agendar agora</a
+            >
+          </div>
+
+          <!-- Popular -->
+          <div class="preco-card destaque">
+            <div class="tag-popular">⭐ Mais procurado</div>
+            <p class="preco-nome">Plano Mensal</p>
+            <div class="preco-valor"><sup>R$</sup>280</div>
+            <p class="preco-periodo">por mês · até 2 consultas</p>
+            <ul class="preco-lista">
+              <li>2 consultas mensais</li>
+              <li>Prioridade no agendamento</li>
+              <li>Acompanhamento por WhatsApp</li>
+              <li>Receituário digital ilimitado</li>
+              <li>Desconto em exames parceiros</li>
+            </ul>
+            <a href="#contato" class="btn-preco btn-preco-filled"
+              >Assinar plano</a
+            >
+          </div>
+
+          <!-- Família -->
+          <div class="preco-card">
+            <p class="preco-nome">Plano Família</p>
+            <div class="preco-valor"><sup>R$</sup>490</div>
+            <p class="preco-periodo">por mês · até 4 pessoas</p>
+            <ul class="preco-lista">
+              <li>Até 4 membros inclusos</li>
+              <li>4 consultas mensais</li>
+              <li>Prioridade máxima</li>
+              <li>Acompanhamento familiar</li>
+              <li>Desconto em exames parceiros</li>
+            </ul>
+            <a href="#contato" class="btn-preco btn-preco-outline"
+              >Quero esse plano</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <div class="contato-inner">
+        <p class="section-label">Fale conosco</p>
+        <h2 class="section-title">Pronto para<br />cuidar de você</h2>
+        <p class="section-sub">
+          Preencha o formulário e nossa equipe entra em contato para confirmar
+          seu agendamento.
+        </p>
+
+        <form class="contato-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" placeholder="(27) 99999-9999" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="seu@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="plano">Plano de interesse</label>
+            <select id="plano">
+              <option value="">Selecione um plano</option>
+              <option>Consulta Avulsa – R$ 200</option>
+              <option>Plano Mensal – R$ 360/mês</option>
+              <option>Plano Família – R$ 690/mês</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="msg">Mensagem (opcional)</label>
+            <textarea
+              id="msg"
+              placeholder="Conte um pouco sobre o que precisa..."
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-enviar">Enviar agendamento →</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-logo">Consultório <span>do Aço</span></div>
+      <p>© 2025 Consultório do Aço · Todos os direitos reservados</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Política de privacidade</a>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
